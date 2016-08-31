@@ -1,0 +1,17 @@
+{
+  "name": "tipi.component.ratio-banner",
+  "homepage": "https://github.com/toolbarthomas/tipi.component.ratio-banner",
+  "authors": [
+    "Thomas van der Velde <contact@toolbarthomas.net>"
+  ],
+  "description": "Scaling banner component for Tipi",
+  "keywords": [
+    "toolbarthomas",
+    "modular",
+    "tipi",
+    "ratio",
+    "banner"
+  ],
+  "license": "MIT",
+  "main": "_tipi.component.ratio-banner.scss"
+}

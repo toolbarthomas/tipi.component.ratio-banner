@@ -1,0 +1,46 @@
+@mixin core_ratio-banner {
+	.ratio-banner {
+		position: relative;
+		overflow: hidden;
+	}
+
+	.ratio-banner-content {
+		width: 200%;
+		display: table;
+		table-layout: fixed;
+		margin-left: -100%;
+		font-size: 0;
+	}
+
+	.ratio-banner-content-push,
+	.ratio-banner-content-body {
+		display: inline-block;
+		vertical-align: $ratio-banner-vertical-align;
+		position: relative;
+		width: 50%;
+	}
+
+
+	.ratio-banner-content-push {
+		overflow: hidden;
+		min-height: $ratio-banner-min-height;
+		max-height: $ratio-banner-max-height;
+
+		&:before {
+			display: block;
+			padding-top: $ratio-banner-ratio;
+			content: " ";
+		}
+	}
+
+	.ratio-banner-content-body {
+		padding: $ratio-banner-body-gutter 0;
+		@include responsive-font-size('default-font-size');
+	}
+
+	.ratio-banner-wrapper {
+		margin: 0 auto;
+		max-width: $ratio-banner-wrapper-max-width;
+		padding: 0 $ratio-banner-wrapper-gutter;
+	}
+}
