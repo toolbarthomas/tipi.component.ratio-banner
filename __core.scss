@@ -20,7 +20,6 @@
 		width: 50%;
 	}
 
-
 	.ratio-banner-content-push {
 		overflow: hidden;
 		min-height: $ratio-banner-min-height;
@@ -42,5 +41,24 @@
 		margin: 0 auto;
 		max-width: $ratio-banner-wrapper-max-width;
 		padding: 0 $ratio-banner-wrapper-gutter;
+	}
+
+	.ratio-banner-image {
+		position: absolute;
+		top: 0;
+		left: 0;
+		right: 0;
+		bottom: 0;
+		background-size: cover;
+		background-position: center top;
+		background-repeat: no-repeat;
+		overflow: hidden;
+
+		> img {
+			visibility: hidden;
+			display: block;
+			max-width: 100%;
+			height: auto;
+		}
 	}
 }
